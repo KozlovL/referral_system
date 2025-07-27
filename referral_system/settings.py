@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', '123')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True')
 
-ALLOWED_HOSTS = ['referral-system-ooml.onrender.com']
+ALLOWED_HOSTS = ['referral-system-ooml.onrender.com', 'localhost', '127.0.0.1']
 
 AUTH_USER_MODEL = 'api.User'
 # Application definition
