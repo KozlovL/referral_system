@@ -23,7 +23,7 @@
 
 1. **Клонируйте репозиторий:**
 ```bash
-git clone git@github.com:KozlovL/referral_system.git
+git clone https://github.com/KozlovL/referral_system.git
 cd referral_system
 ```
 
