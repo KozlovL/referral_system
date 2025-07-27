@@ -17,7 +17,7 @@
 - Django REST Framework
 - PostgreSQL
 - JWT
-
+- Gunicorn
 
 ## Локальное развертывание
 
