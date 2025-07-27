@@ -1,9 +1,7 @@
 services:
   - type: web
     name: referral-system
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn referral_system.wsgi:application"
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: referral_system.settings
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn referral_system.wsgi:application
+    preDeployCommand: python manage.py migrate
